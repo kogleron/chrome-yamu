@@ -1,0 +1,68 @@
+{
+  "background":               {
+    "persistent": true,
+    "scripts":    [
+      "js/background.js"
+    ]
+  },
+  "content_scripts":          [
+    {
+      "js":      [
+        "js/content.js"
+      ],
+      "matches": [
+        "*://music.yandex.ru/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "js/page.js"
+  ],
+  "browser_action":           {
+    "default_icon":  {
+      "16":  "img/play-icon-16.png",
+      "48":  "img/play-icon-48.png",
+      "96":  "img/play-icon-96.png",
+      "128": "img/play-icon-128.png"
+    },
+    "default_title": "Pause a song"
+  },
+  "default_locale":           "ru",
+  "description":              "__MSG_app_description__",
+  "icons":                    {
+    "16":  "img/play-icon-16.png",
+    "48":  "img/play-icon-48.png",
+    "96":  "img/play-icon-96.png",
+    "128": "img/play-icon-128.png"
+  },
+  "manifest_version":         2,
+  "name":                     "__MSG_app_name__",
+  "commands":         {
+    "next-track": {
+      "description":      "__MSG_cmd_next_track__",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+Right"
+      }
+    },
+    "play-pause": {
+      "description":      "__MSG_cmd_play_pause__",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+Down"
+      }
+    },
+    "like-song": {
+      "description":      "__MSG_cmd_like_song__",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+Shift+Up"
+      }
+    }
+  },
+  "permissions":              [
+    "tabs",
+    "*://music.yandex.ru/*"
+  ],
+  "version":                  "1.0.0"
+}

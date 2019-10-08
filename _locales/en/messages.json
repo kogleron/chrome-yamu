@@ -1,0 +1,17 @@
+{
+  "app_description": {
+    "message": "Control Yandex.Music"
+  },
+  "app_name":        {
+    "message": "Yamu"
+  },
+  "cmd_next_track": {
+    "message": "Next track"
+  },
+  "cmd_play_pause": {
+    "message": "Play/Pause"
+  },
+  "cmd_like_song": {
+    "message": "Like song"
+  }
+}
