@@ -12,7 +12,7 @@ function playNext() {
 
             chrome.tabs.executeScript(tabs[0].id, {
                 code: '(' + function () {
-                    document.getElementsByClassName('player-controls_radio')[0]
+                    document.getElementsByClassName('deco-player-controls')[0]
                       .getElementsByClassName('player-controls__btn_next')[0].click();                } + ')();'
             });
         }
@@ -33,7 +33,7 @@ function playPause(){
 
           chrome.tabs.executeScript(tabs[0].id, {
               code: '(' + function () {
-                  document.getElementsByClassName('player-controls_radio')[0]
+                  document.getElementsByClassName('deco-player-controls')[0]
                     .getElementsByClassName('player-controls__btn_play')[0].click();                } + ')();'
           });
         }
@@ -54,7 +54,7 @@ function likeSong(){
 
           chrome.tabs.executeScript(tabs[0].id, {
               code: '(' + function () {
-                  document.getElementsByClassName('player-controls_radio')[0]
+                  document.getElementsByClassName('deco-player-controls')[0]
                     .getElementsByClassName('d-like_theme-player')[0].click();                } + ')();'
           });
         }
